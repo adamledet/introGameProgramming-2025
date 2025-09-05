@@ -1,0 +1,14 @@
+using Exercises;
+using UnityEngine;
+
+public class HealthPickup : MonoBehaviour
+{
+    private void OnTriggerEnter(Collider other)
+    {
+        var player = other.GetComponent<SimplePlayerController>();
+        if (player)
+        {
+            player.GetComponent<HealthDecay>().Increment();
+        }
+    }
+}

@@ -42,6 +42,7 @@
     <UnityVersion>6000.2.0f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Users\adamc\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -49,12 +50,14 @@
   <ItemGroup>
     <Compile Include="Assets\Shared\Scripts\SimplePlayerController.cs" />
     <Compile Include="Assets\Exercises\_Dummy\Timer.cs" />
+    <Compile Include="Assets\Exercises\Coin Pickup\HealthDecay.cs" />
     <Compile Include="Assets\Shared\Scripts\Rebound.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\Pickup.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Shared\Scripts\InputManager.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\Player.cs" />
     <Compile Include="Assets\Exercises\Object Spawner\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Exercises\Coin Pickup\HealthPickup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
