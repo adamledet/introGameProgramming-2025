@@ -82,6 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PickupEquipment
   icon: {fileID: 2800000, guid: 32192bc4b4038494886d2c5ca4dfbf64, type: 3}
   equippedObject: {fileID: 0}
+  equipLocation: Head
 --- !u!4 &6108154950356745684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7486192033272423783, guid: b3f12cfb52d8c496d90404c4be6ebea6, type: 3}

@@ -80,7 +80,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 624721385817076614, guid: b3f12cfb52d8c496d90404c4be6ebea6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5193645773395649438, guid: b3f12cfb52d8c496d90404c4be6ebea6, type: 3}
       propertyPath: m_Enabled
@@ -88,15 +88,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7486192033272423783, guid: b3f12cfb52d8c496d90404c4be6ebea6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.98
       objectReference: {fileID: 0}
     - target: {fileID: 7486192033272423783, guid: b3f12cfb52d8c496d90404c4be6ebea6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3930479
+      value: 0.841
       objectReference: {fileID: 0}
     - target: {fileID: 7486192033272423783, guid: b3f12cfb52d8c496d90404c4be6ebea6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.11073538
+      value: -4.29
       objectReference: {fileID: 0}
     - target: {fileID: 7486192033272423783, guid: b3f12cfb52d8c496d90404c4be6ebea6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -161,3 +161,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PickupEquipment
   icon: {fileID: 2800000, guid: 83182df664e6a415dae7d3678fba11db, type: 3}
   equippedObject: {fileID: 6326502214132939208}
+  equipLocation: Head

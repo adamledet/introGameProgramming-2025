@@ -172,13 +172,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4994445905067775268, guid: e463336862b024d3a9b871adb3504487, type: 3}
+      propertyPath: equipLocation
+      value: Hand
+      objectReference: {fileID: 0}
     - target: {fileID: 6326502214132939208, guid: e463336862b024d3a9b871adb3504487, type: 3}
       propertyPath: m_Name
       value: Pan Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6326502214132939208, guid: e463336862b024d3a9b871adb3504487, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -332,6 +332,10 @@ PrefabInstance:
       value: Armor Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3498303454110235686, guid: 19c0fa466f62046fc8093f3ed8b5b95e, type: 3}
+      propertyPath: equipLocation
+      value: Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498303454110235686, guid: 19c0fa466f62046fc8093f3ed8b5b95e, type: 3}
       propertyPath: equippedObject
       value: 
       objectReference: {fileID: 2140417255}
@@ -393,6 +397,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 476381551682671785, guid: 60d584fc2433b47acbf8a04eb0a4c0d6, type: 3}
+      propertyPath: equipLocation
+      value: Hand
+      objectReference: {fileID: 0}
     - target: {fileID: 476381551682671785, guid: 60d584fc2433b47acbf8a04eb0a4c0d6, type: 3}
       propertyPath: equippedObject
       value: 
@@ -1030,6 +1038,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4634756734275468, guid: 325c2a72f558d4e419ec4f9ea74e54f5, type: 3}
   m_PrefabInstance: {fileID: 1137107665}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1150751179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1150751180}
+  - component: {fileID: 1150751182}
+  - component: {fileID: 1150751181}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1150751180
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150751179}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1698405294}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1150751181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150751179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a9bb7084cc82b44288ed6f864c1d4148, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1150751182
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150751179}
+  m_CullTransparentMesh: 1
 --- !u!4 &1189744144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4240262807728466, guid: 325c2a72f558d4e419ec4f9ea74e54f5, type: 3}
@@ -1920,6 +2003,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f5e30439dedcf42bb2702d397b72d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentManager
+  headEquip: {fileID: 0}
+  chestEquip: {fileID: 0}
+  handEquip: {fileID: 0}
+  backEquip: {fileID: 0}
 --- !u!4 &1644270058 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4341141330585246, guid: 325c2a72f558d4e419ec4f9ea74e54f5, type: 3}
@@ -1955,7 +2042,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1150751180}
   m_Father: {fileID: 1409677375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1983,7 +2071,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 1979.2, y: 2048}
+  m_CellSize: {x: 100, y: 200}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -2074,6 +2162,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3364277161001941103, guid: fcce5a7dc00ac45e3a137db6144b72e6, type: 3}
+      propertyPath: equipLocation
+      value: Back
+      objectReference: {fileID: 0}
+    - target: {fileID: 3364277161001941103, guid: fcce5a7dc00ac45e3a137db6144b72e6, type: 3}
       propertyPath: equippedObject
       value: 
       objectReference: {fileID: 1831551523}
@@ -2094,6 +2186,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1235255379891638531, guid: bce99de51e5084602a6b1b84041a5e45, type: 3}
+      propertyPath: equipLocation
+      value: Head
+      objectReference: {fileID: 0}
     - target: {fileID: 1235255379891638531, guid: bce99de51e5084602a6b1b84041a5e45, type: 3}
       propertyPath: equippedObject
       value: 
@@ -2262,6 +2358,10 @@ PrefabInstance:
       value: Beer Hat Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7721642029950450564, guid: 6c2c3d3f7dc4b487b965c0fe1e3c6798, type: 3}
+      propertyPath: equipLocation
+      value: Head
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721642029950450564, guid: 6c2c3d3f7dc4b487b965c0fe1e3c6798, type: 3}
       propertyPath: equippedObject
       value: 
       objectReference: {fileID: 1049895458}
@@ -2317,6 +2417,10 @@ PrefabInstance:
     - target: {fileID: 2124555686354733529, guid: b8d8d31fa1aea4de3a2b17447e884e9d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879901995685157783, guid: b8d8d31fa1aea4de3a2b17447e884e9d, type: 3}
+      propertyPath: equipLocation
+      value: Head
       objectReference: {fileID: 0}
     - target: {fileID: 3879901995685157783, guid: b8d8d31fa1aea4de3a2b17447e884e9d, type: 3}
       propertyPath: equippedObject
