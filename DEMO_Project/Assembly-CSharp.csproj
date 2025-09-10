@@ -52,8 +52,10 @@
     <Compile Include="Assets\Shared\Scripts\RotateAround.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\QuestManager.cs" />
     <Compile Include="Assets\Exercises\Inventory\InventoryManager.cs" />
+    <Compile Include="Assets\Exercises\Quest Markers\QuestComponent.cs" />
+    <Compile Include="Assets\DialogBox\OptionUI.cs" />
     <Compile Include="Assets\Flickering Light\FlickerLight.cs" />
-    <Compile Include="Assets\Exercises\Quest Markers\Quest.cs" />
+    <Compile Include="Assets\Exercises\Quest Markers\Quest__Data.cs" />
     <Compile Include="Assets\Shared\Scripts\SimplePlayerController.cs" />
     <Compile Include="Assets\Shared\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Exercises\_Dummy\Timer.cs" />
@@ -65,9 +67,11 @@
     <Compile Include="Assets\Shared\Scripts\InputManager.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\Player.cs" />
     <Compile Include="Assets\Exercises\Object Spawner\Scripts\Spawner.cs" />
+    <Compile Include="Assets\DialogBox\DialogueNode.cs" />
     <Compile Include="Assets\Shared\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\QuestReq.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\HealthPickup.cs" />
+    <Compile Include="Assets\DialogBox\DialogueManager.cs" />
     <Compile Include="Assets\Exercises\Inventory\EquipmentManager.cs" />
   </ItemGroup>
   <ItemGroup>

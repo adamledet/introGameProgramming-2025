@@ -1,24 +1,34 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
 {
-    List<Quest> quests = new List<Quest>();
-    [SerializeField] GameObject questPrefab, reqPrefab;
+    List<Quest_Data> quests = new List<Quest_Data>();
+    [SerializeField] QuestComponent questPrefab;
+    [SerializeField] GameObject reqPrefab;
     [SerializeField] Transform parent;
     private void Awake()
     {
-        var quest1 = new Quest("Traveling");
+        var quest1 = new Quest_Data("Traveling");
         quest1.Add(new QuestReq("Go to Marker 1"));
         quests.Add(quest1);
     }
 
-    private void ShowQuest(Quest quest)
+    private void Start()
     {
-        var questObj = Instantiate(questPrefab, parent);
-        foreach (var req in quest.GetAll())
+        ShowQuest(quests[0]);
+    }
+
+    private void ShowQuest(Quest_Data quest)
+    {
+        QuestComponent questObj = Instantiate(questPrefab, parent);
+        //questObj.Populate(quest);
+        /*foreach (var req in quest.GetAll())
         {
-            //var reqObj = Instantiate(reqPrefab);
-        }
+            //var reqParent = questObj.GetComponentInChildren<QuestRequirement>().transform;
+            //var reqParent = questObj.transform.GetChild(1);
+            //var reqObj = Instantiate(reqPrefab, reqParent);
+        }*/
     }
 }
