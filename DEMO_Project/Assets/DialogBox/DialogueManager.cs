@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
                 break;
             }
         }
-        current = selected.next;
+        //current = selected.next;
         Show();
     }
 }

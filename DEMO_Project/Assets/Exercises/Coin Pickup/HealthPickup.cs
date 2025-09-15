@@ -1,6 +1,7 @@
 using Exercises;
 using UnityEngine;
 
+//Adam Ledet
 public class HealthPickup : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
@@ -9,6 +10,7 @@ public class HealthPickup : MonoBehaviour
         if (player)
         {
             player.GetComponent<HealthDecay>().Increment();
+            Destroy(this.gameObject);
         }
     }
 }

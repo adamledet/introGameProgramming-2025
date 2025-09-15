@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\assets\\exercises\\inventory\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\inventory\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\exercises\\inventory\\pickupequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\inventory\\pickupequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\exercises\\inventory\\equipmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\inventory\\equipmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\assets\\exercises\\inventory\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\inventory\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\assets\\exercises\\coin pickup\\healthpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\coin pickup\\healthpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\assets\\exercises\\coin pickup\\healthdecay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\coin pickup\\healthdecay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EquipmentManager.cs",
               "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Inventory\\EquipmentManager.cs",
               "RelativeDocumentMoniker": "Assets\\Exercises\\Inventory\\EquipmentManager.cs",
               "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Inventory\\EquipmentManager.cs",
               "RelativeToolTip": "Assets\\Exercises\\Inventory\\EquipmentManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T03:36:34.9Z",
+              "WhenOpened": "2025-09-15T00:54:54.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "InventoryManager.cs",
               "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Inventory\\InventoryManager.cs",
               "RelativeDocumentMoniker": "Assets\\Exercises\\Inventory\\InventoryManager.cs",
               "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Inventory\\InventoryManager.cs",
               "RelativeToolTip": "Assets\\Exercises\\Inventory\\InventoryManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T03:15:20.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PickupEquipment.cs",
               "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Inventory\\PickupEquipment.cs",
               "RelativeDocumentMoniker": "Assets\\Exercises\\Inventory\\PickupEquipment.cs",
               "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Inventory\\PickupEquipment.cs",
               "RelativeToolTip": "Assets\\Exercises\\Inventory\\PickupEquipment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T03:15:19.041Z",
+              "WhenOpened": "2025-09-15T00:54:50.915Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HealthPickup.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Coin Pickup\\HealthPickup.cs",
-              "RelativeDocumentMoniker": "Assets\\Exercises\\Coin Pickup\\HealthPickup.cs",
-              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Coin Pickup\\HealthPickup.cs",
-              "RelativeToolTip": "Assets\\Exercises\\Coin Pickup\\HealthPickup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T03:09:33.158Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HealthDecay.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Coin Pickup\\HealthDecay.cs",
-              "RelativeDocumentMoniker": "Assets\\Exercises\\Coin Pickup\\HealthDecay.cs",
-              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\Coin Pickup\\HealthDecay.cs",
-              "RelativeToolTip": "Assets\\Exercises\\Coin Pickup\\HealthDecay.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T03:09:28.099Z"
             }
           ]
         }

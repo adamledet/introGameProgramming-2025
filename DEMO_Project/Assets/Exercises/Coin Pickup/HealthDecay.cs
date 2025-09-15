@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Adam Ledet
+
 public class HealthDecay : MonoBehaviour
 {
     [SerializeField] Image bar;// Health Bar

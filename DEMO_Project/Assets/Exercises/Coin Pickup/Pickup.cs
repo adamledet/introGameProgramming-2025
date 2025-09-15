@@ -8,7 +8,7 @@ public class Pickup : MonoBehaviour
         if (player != null)
         {
             player.Increment();
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 }

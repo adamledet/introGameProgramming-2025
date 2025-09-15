@@ -147,5 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547d5dd65c9534544b9b65c8f3e64ba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickupEquipment
-  icon: {fileID: 2800000, guid: a8487fe053b3940bb9c1f776c76dc947, type: 3}
-  equippedObject: {fileID: 8748992257025337886}
+  icon: {fileID: 21300000, guid: a8487fe053b3940bb9c1f776c76dc947, type: 3}
+  equippedObject: {fileID: 0}
+  equipLocation: Back
