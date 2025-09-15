@@ -7,13 +7,8 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     //Attributes
-    public float speed;
-    public InputAction moveUp;
-    public InputAction moveDown;
-    public InputAction moveLeft;
-    public InputAction moveRight;
-
-    public InputAction MoveAction;
+    [SerializeField] float speed;
+    private Vector3 dir;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,6 +22,18 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.W))
         {
             MovePlayer(new Vector3(0,speed,0));
+        }
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            MovePlayer(new Vector3(-speed,0,0));
+        }
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            MovePlayer(new Vector3(0,-speed,0));
+        }
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+            MovePlayer(new Vector3(0,0,-speed));
         }
     }
 
