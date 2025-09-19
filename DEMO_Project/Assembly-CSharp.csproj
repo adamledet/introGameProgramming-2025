@@ -55,11 +55,13 @@
     <Compile Include="Assets\Exercises\Inventory\InventoryManager.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\QuestComponent.cs" />
     <Compile Include="Assets\DialogBox\OptionUI.cs" />
+    <Compile Include="Assets\Exercises\HW2\Stealth\Backstab.cs" />
     <Compile Include="Assets\Flickering Light\FlickerLight.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\Quest__Data.cs" />
     <Compile Include="Assets\Shared\Scripts\SimplePlayerController.cs" />
     <Compile Include="Assets\Shared\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Exercises\_Dummy\Timer.cs" />
+    <Compile Include="Assets\Exercises\HW2\Stealth\FOV.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\HealthDecay.cs" />
     <Compile Include="Assets\Shared\Scripts\Rebound.cs" />
     <Compile Include="Assets\Exercises\HW2\Turret\Turret.cs" />
