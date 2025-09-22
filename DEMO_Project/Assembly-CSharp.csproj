@@ -53,6 +53,7 @@
     <Compile Include="Assets\Exercises\HW2\Turret\MovingTaget.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\QuestManager.cs" />
     <Compile Include="Assets\Exercises\Inventory\InventoryManager.cs" />
+    <Compile Include="Assets\Exercises\HW2\Climbing Ladder\Ladder.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\QuestComponent.cs" />
     <Compile Include="Assets\DialogBox\OptionUI.cs" />
     <Compile Include="Assets\Exercises\HW2\Stealth\Backstab.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Assets\Exercises\HW2\Stealth\FOV.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\HealthDecay.cs" />
     <Compile Include="Assets\Shared\Scripts\Rebound.cs" />
+    <Compile Include="Assets\Exercises\HW2\Climbing Ladder\Climber.cs" />
     <Compile Include="Assets\Exercises\HW2\Turret\Turret.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\Pickup.cs" />
     <Compile Include="Assets\Shared\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
