@@ -6,47 +6,31 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //Attributes
+    Vector3 direction;
     [SerializeField] float speed;
-    private Vector3 direction;
-    private bool moving;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        moving = false;
-
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            MovePlayer(new Vector3(0, 1, 0));
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            MovePlayer(new Vector3(-1, 0, 0));
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            MovePlayer(new Vector3(0, -1, 0));
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            MovePlayer(new Vector3(0, 0, -1));
-        }
-
-        if (moving)
-        {
-            transform.position += (direction) * speed * Time.deltaTime;
-        }
+        ApplyMovement(direction*speed*Time.deltaTime);
     }
 
-    public void MovePlayer(Vector3 dir)
+    // Movement when the player uses input
+    public void MovePlayer(InputAction.CallbackContext context)
     {
-        direction += dir;
+        Vector2 dir = context.ReadValue<Vector2>();
+        direction = new Vector3(dir.x, dir.y, 0).normalized;
+        //Debug.Log($"MOVING: {direction}");
+    }
+
+    //Apply player Movement
+    public void ApplyMovement(Vector3 dir)
+    {
+        transform.position += dir;
+        //direction = Vector3.zero;
     }
 }
