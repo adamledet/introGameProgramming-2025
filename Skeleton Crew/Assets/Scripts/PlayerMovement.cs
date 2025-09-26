@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ApplyMovement(direction*speed*Time.deltaTime);
+        ApplyMovement(direction * speed * Time.deltaTime);
     }
 
     // Movement when the player uses input
@@ -32,5 +32,10 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.position += dir;
         //direction = Vector3.zero;
+    }
+
+    public void PlayerAttack(InputAction.CallbackContext context)
+    {
+        Debug.Log($"Player Attack: {context}");
     }
 }
