@@ -48,8 +48,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlayerAttack(InputAction.CallbackContext context)
     {
-        var bullet = Instantiate(playerAttack, transform.position, Quaternion.identity);
-        Vector3 dirVector = (Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position).normalized;
-        bullet.GetComponent<PlayerAttack>().direction = dirVector;
+        if(context.performed)
+        {
+            var bullet = Instantiate(playerAttack, transform.position, Quaternion.identity);
+            Vector3 dirVector = (Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position).normalized;
+            bullet.GetComponent<PlayerAttack>().direction = dirVector;
+        }
     }
 }
