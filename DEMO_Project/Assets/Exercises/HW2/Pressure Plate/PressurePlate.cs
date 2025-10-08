@@ -5,15 +5,19 @@ public class PressurePlate : MonoBehaviour
 {
     [SerializeField] Transform gate;
     [SerializeField] float openSpeed;
+    [SerializeField] int gateRaise;//Amount gate can be raised
     private bool gateOpening;
-    private int gateMax = 3;
-    private Transform gateOrigPos;
+    private Vector3 gateOrig;//Gate's starting position
+    private Vector3 gateMax;//Gate's 'raised' position
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gateOpening = false;
-        gateOrigPos = gate;
+        gateOrig = gate.position;
+
+        gateMax = gateOrig;
+        gateMax.y += gateRaise;
     }
 
     // Update is called once per frame
@@ -21,25 +25,13 @@ public class PressurePlate : MonoBehaviour
     {
         if (gateOpening)
         {
-            if (gate.position.y < (gateOrigPos.position.y + gateMax))
-            {
-                gate.position = new Vector3(gateOrigPos.position.x, gateOrigPos.position.y + openSpeed * Time.deltaTime, gateOrigPos.position.z);
-            }
-            if (gate.position.y > (gateOrigPos.position.y + gateMax))
-            {
-                gate.position = new Vector3(gateOrigPos.position.x, (gateOrigPos.position.y + gateMax), gateOrigPos.position.z);
-            }
+            //Debug.Log($"RISE: Current: {gate.position}, Target: {gateMax}");
+            gate.position = Vector3.Lerp(gate.position, gateMax, Time.deltaTime * openSpeed);
         }
         else
         {
-            if (gate.position.y > (gateOrigPos.position.y))
-            {
-                gate.position = new Vector3(gateOrigPos.position.x, gateOrigPos.position.y - openSpeed * Time.deltaTime, gateOrigPos.position.z);
-            }
-            if (gate.position.y < (gateOrigPos.position.y + gateMax))
-            {
-                gate.position = gateOrigPos.position;
-            }
+            //Debug.Log($"FALL: Current: {gate.position}, Target: {gateOrig}");
+            gate.position = Vector3.Lerp(gate.position, gateOrig, Time.deltaTime * openSpeed);
         }
     }
 

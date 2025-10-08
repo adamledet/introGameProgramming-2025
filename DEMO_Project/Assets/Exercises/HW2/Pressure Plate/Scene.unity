@@ -1057,6 +1057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PressurePlate
   gate: {fileID: 625051932}
   openSpeed: 1
+  gateRaise: 3
 --- !u!1001 &1337618071
 PrefabInstance:
   m_ObjectHideFlags: 0
