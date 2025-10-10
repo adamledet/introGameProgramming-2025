@@ -14,7 +14,9 @@ namespace StarterAssets
 #endif
     public class LockOnController : MonoBehaviour
     {
-        bool lockedOn = true;
+        bool lockedOn;
+
+
         [SerializeField] GameObject marker;
 
         [Header("Player")]
@@ -263,6 +265,7 @@ namespace StarterAssets
                 float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,
                     RotationSmoothTime);
 
+                // Player rotation if / if not locked on
                 if (lockedOn)
                 {
                     var direction = marker.transform.position - transform.position;
@@ -275,11 +278,10 @@ namespace StarterAssets
                 }
             }
 
-
-
+            // Movement if / if not locked on
             if (lockedOn)
             {
-                var direction = ((transform.forward*_input.move.y + transform.right*_input.move.x).normalized) * (Time.deltaTime * _speed);
+                var direction = ((transform.forward*_input.move.y + transform.right*_input.move.x).normalized) * (Time.deltaTime * _speed) + (new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
                 _controller.Move(direction);
             }
             else
@@ -408,8 +410,10 @@ namespace StarterAssets
             }
         }
 
-        public void LockOn()
+        // Called when SPACE is pressed
+        public void OnLockOn()
         {
+            Debug.Log("LOCKON");
             lockedOn = !lockedOn;
             marker.SetActive(lockedOn);
         }
