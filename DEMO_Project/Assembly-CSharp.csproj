@@ -59,6 +59,7 @@
     <Compile Include="Assets\Exercises\HW2\Stealth\Backstab.cs" />
     <Compile Include="Assets\Flickering Light\FlickerLight.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\Quest__Data.cs" />
+    <Compile Include="Assets\Exercises\HW3\Emote Wheel\EmoteWheel.cs" />
     <Compile Include="Assets\Shared\Scripts\SimplePlayerController.cs" />
     <Compile Include="Assets\Shared\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Exercises\_Dummy\Timer.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\Shared\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\QuestReq.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\HealthPickup.cs" />
+    <Compile Include="Assets\Exercises\HW3\OpenDoor\DoorToggle.cs" />
     <Compile Include="Assets\Exercises\HW2\Top Down\FacePlayer.cs" />
     <Compile Include="Assets\Exercises\HW2\Pressure Plate\PressurePlate.cs" />
     <Compile Include="Assets\DialogBox\DialogueManager.cs" />
