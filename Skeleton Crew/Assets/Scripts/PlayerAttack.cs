@@ -6,7 +6,8 @@ public class PlayerAttack : MonoBehaviour
 {
     public Vector3 direction;
     public float speed;
-    [SerializeField] float health;
+    [SerializeField] public float health;
+    [SerializeField] public float damage;
     [SerializeField] float decel;
     private int decayCounter;
 
@@ -27,13 +28,13 @@ public class PlayerAttack : MonoBehaviour
         {
             DestroySelf();
         }
-        transform.position += (direction * speed * Time.deltaTime);
     }
 
     private void FixedUpdate()
     {
         speed -= decel * Time.deltaTime * decayCounter;
         decayCounter++;
+        transform.position += (direction * speed * Time.deltaTime);
     }
 
     // Currently used to destroy bullet. Should later be used to turn off and reset position of bullet.

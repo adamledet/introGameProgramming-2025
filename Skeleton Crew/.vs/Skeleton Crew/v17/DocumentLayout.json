@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\skeleton crew\\assets\\scripts\\spawnenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\skeleton crew\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\skeleton crew\\assets\\scripts\\spawnenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{352755EB-03B7-5612-E709-67C20B15FBD6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\Library\\PackageCache\\com.unity.inputsystem@be6c4fd0abf5\\InputSystem\\Utilities\\DelegateHelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "SpawnEnemies.cs",
               "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\Assets\\Scripts\\SpawnEnemies.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnEnemies.cs",
               "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\Assets\\Scripts\\SpawnEnemies.cs",
               "RelativeToolTip": "Assets\\Scripts\\SpawnEnemies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T01:59:57.83Z",
               "EditorCaption": ""
@@ -53,7 +53,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
               "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\Assets\\Scripts\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T01:56:07.888Z",
               "EditorCaption": ""
@@ -68,8 +68,7 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.inputsystem@be6c4fd0abf5\\InputSystem\\Utilities\\DelegateHelpers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAACAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T21:18:06.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-28T21:18:06.493Z"
             },
             {
               "$type": "Document",
@@ -79,21 +78,23 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAttack.cs",
               "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\Assets\\Scripts\\PlayerAttack.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerAttack.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T21:09:40.325Z"
+              "WhenOpened": "2025-09-28T21:09:40.325Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\Skeleton Crew\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwDYAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T23:52:07.871Z"
+              "WhenOpened": "2025-08-22T23:52:07.871Z",
+              "EditorCaption": ""
             }
           ]
         }
