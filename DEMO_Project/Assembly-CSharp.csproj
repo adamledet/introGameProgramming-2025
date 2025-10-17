@@ -55,6 +55,7 @@
     <Compile Include="Assets\Exercises\Inventory\InventoryManager.cs" />
     <Compile Include="Assets\Exercises\HW2\Climbing Ladder\Ladder.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\QuestComponent.cs" />
+    <Compile Include="Assets\Exercises\HW2\Stealth\IStealth.cs" />
     <Compile Include="Assets\DialogBox\OptionUI.cs" />
     <Compile Include="Assets\Exercises\HW2\Stealth\Backstab.cs" />
     <Compile Include="Assets\Flickering Light\FlickerLight.cs" />
@@ -73,14 +74,17 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Shared\Scripts\InputManager.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\Player.cs" />
+    <Compile Include="Assets\Exercises\HW2\Stealth\Stealth.cs" />
     <Compile Include="Assets\Exercises\HW2\Lock on System\LockOnController.cs" />
     <Compile Include="Assets\Exercises\Object Spawner\Scripts\Spawner.cs" />
     <Compile Include="Assets\DialogBox\DialogueNode.cs" />
+    <Compile Include="Assets\Exercises\HW2\Stealth\IDetector.cs" />
     <Compile Include="Assets\Shared\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\QuestReq.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\HealthPickup.cs" />
     <Compile Include="Assets\Exercises\HW3\OpenDoor\DoorToggle.cs" />
     <Compile Include="Assets\Exercises\HW2\Top Down\FacePlayer.cs" />
+    <Compile Include="Assets\Exercises\HW2\Stealth\Detection.cs" />
     <Compile Include="Assets\Exercises\HW2\Pressure Plate\PressurePlate.cs" />
     <Compile Include="Assets\DialogBox\DialogueManager.cs" />
     <Compile Include="Assets\Exercises\Inventory\EquipmentManager.cs" />
