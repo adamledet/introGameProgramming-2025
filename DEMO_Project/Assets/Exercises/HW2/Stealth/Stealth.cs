@@ -4,7 +4,7 @@ using UnityEngine;
 public class Stealth : MonoBehaviour, IStealth
 {
     [SerializeField] Animator animator;
-    bool crouching;
+    bool crouching, canBackstab;
     Transform enemy;
 
     public bool IsHidden()
@@ -14,12 +14,16 @@ public class Stealth : MonoBehaviour, IStealth
 
     void Update()
     {
-        if(enemy)
+        if(enemy != null)
         {
             var dot = Vector3.Dot(transform.forward, enemy.position - transform.position);
-            if(dot < 0 && dot > -0.5)
+            if (dot < 0 && dot > -0.5)
             {
-                Debug.Log("DO THING");
+                canBackstab = true;
+            }
+            else
+            {
+                canBackstab = false;
             }
         }
     }
@@ -30,8 +34,25 @@ public class Stealth : MonoBehaviour, IStealth
         animator.SetBool("Crouching", crouching);
     }
 
-    public void Notify(Transform enemy)
+    public void OnAction()
     {
-        this.enemy = enemy;
+        if (canBackstab)
+        {
+            // Backstab
+        }
+        else
+        {
+            // Attack
+        }
+    }
+
+    public void Notify(IDetector enemy)
+    {
+        this.enemy = enemy.GetTransform();
+    }
+
+    public Transform getTransform()
+    {
+        return transform;
     }
 }

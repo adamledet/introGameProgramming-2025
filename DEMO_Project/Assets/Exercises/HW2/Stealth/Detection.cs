@@ -14,9 +14,9 @@ public class Detection : MonoBehaviour, IDetector
 
     void Update()
     {
-        if(character)
+        if(character != null)
         {
-            detected = IsInFOV();
+            detected = IsInFOV() || !character.IsHidden();
         }
     }
 
@@ -28,10 +28,10 @@ public class Detection : MonoBehaviour, IDetector
     private void OnTriggerEnter(Collider other)
     {
         var stealthy = other.GetComponent<IStealth>();
-        if (stealthy)
+        if (stealthy != null)
         {
             character = stealthy;
-            character.Notify(transform);
+            character.Notify(this);
             if (!stealthy.IsHidden())
             {
                 detected = true;
@@ -41,5 +41,10 @@ public class Detection : MonoBehaviour, IDetector
     private void OnTriggerExit(Collider other)
     {
         
+    }
+
+    public Transform GetTransform()
+    {
+        return transform;
     }
 }

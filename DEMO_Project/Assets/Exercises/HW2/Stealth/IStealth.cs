@@ -5,6 +5,6 @@ using UnityEngine;
 public interface IStealth
 {
     bool IsHidden();
-    void Notify(Transform enemy);
+    void Notify(IDetector enemy);
     Transform getTransform();
 }

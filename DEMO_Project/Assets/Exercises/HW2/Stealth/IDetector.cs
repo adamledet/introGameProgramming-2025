@@ -1,8 +1,6 @@
 using UnityEngine;
 
-namespace HW3
+public interface IDetector
 {
-    public interface IDetector
-    {
-    }
+    Transform GetTransform();
 }
