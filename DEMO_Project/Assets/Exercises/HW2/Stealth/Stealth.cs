@@ -4,8 +4,10 @@ using UnityEngine;
 public class Stealth : MonoBehaviour, IStealth
 {
     [SerializeField] Animator animator;
-    bool crouching, canBackstab;
-    Transform enemy;
+    [SerializeField] Weapon weapon;
+    [SerializeField] bool crouching, canBackstab;
+    [SerializeField] CharacterController controller;
+    IDetector enemy;
 
     public bool IsHidden()
     {
@@ -16,7 +18,7 @@ public class Stealth : MonoBehaviour, IStealth
     {
         if(enemy != null)
         {
-            var dot = Vector3.Dot(transform.forward, enemy.position - transform.position);
+            var dot = Vector3.Dot(enemy.GetTransform().forward, transform.position - enemy.GetTransform().position);
             if (dot < 0 && dot > -0.5)
             {
                 canBackstab = true;
@@ -38,7 +40,8 @@ public class Stealth : MonoBehaviour, IStealth
     {
         if (canBackstab)
         {
-            // Backstab
+            controller.enabled = false;
+            var backstabPos = enemy;
         }
         else
         {
@@ -46,13 +49,27 @@ public class Stealth : MonoBehaviour, IStealth
         }
     }
 
+    public void startAttack()
+    {
+        weapon.Enable();
+    }
+    public void stopAttack()
+    {
+        weapon.Disable();
+    }
+
     public void Notify(IDetector enemy)
     {
-        this.enemy = enemy.GetTransform();
+        this.enemy = enemy;
     }
 
     public Transform getTransform()
     {
         return transform;
+    }
+
+    public void backstabEvent()
+    {
+        enemy.Backstab();
     }
 }

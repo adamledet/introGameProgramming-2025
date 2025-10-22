@@ -47,4 +47,14 @@ public class Detection : MonoBehaviour, IDetector
     {
         return transform;
     }
+
+    public void GetHit()
+    {
+        return;
+    }
+
+    public void Backstab()
+    {
+        return;
+    }
 }

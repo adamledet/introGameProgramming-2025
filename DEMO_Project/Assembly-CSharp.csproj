@@ -61,6 +61,7 @@
     <Compile Include="Assets\Flickering Light\FlickerLight.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\Quest__Data.cs" />
     <Compile Include="Assets\Exercises\HW3\Emote Wheel\EmoteWheel.cs" />
+    <Compile Include="Assets\Exercises\HW2\Stealth\Weapon.cs" />
     <Compile Include="Assets\Shared\Scripts\SimplePlayerController.cs" />
     <Compile Include="Assets\Shared\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Exercises\_Dummy\Timer.cs" />
