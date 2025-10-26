@@ -3,11 +3,12 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Collider myCollider;
+    [SerializeField] Animator animator;
 
     void OnTriggerEnter(Collider collider)
     {
         var detector = collider.GetComponent<IDetector>();
-        detector?.GetHit();
+        detector?.GetHit(animator);
     }
 
     internal void Disable()

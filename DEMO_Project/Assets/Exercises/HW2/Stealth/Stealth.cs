@@ -19,7 +19,7 @@ public class Stealth : MonoBehaviour, IStealth
         if(enemy != null)
         {
             var dot = Vector3.Dot(enemy.GetTransform().forward, transform.position - enemy.GetTransform().position);
-            if (dot < 0 && dot > -0.5)
+            if (dot < -1)
             {
                 canBackstab = true;
             }
@@ -45,16 +45,18 @@ public class Stealth : MonoBehaviour, IStealth
         }
         else
         {
-            // Attack
+            animator.SetTrigger("Attacking");
         }
     }
 
-    public void startAttack()
+    public void StartAttack()
     {
+        Debug.Log("START ATTACK");
         weapon.Enable();
     }
-    public void stopAttack()
+    public void StopAttack()
     {
+        Debug.Log("STOP ATTACK");
         weapon.Disable();
     }
 
