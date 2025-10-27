@@ -40,7 +40,7 @@ public class Stealth : MonoBehaviour, IStealth
     {
         if (canBackstab)
         {
-            controller.enabled = false;
+            //controller.enabled = false;
             var backstabPos = enemy;
         }
         else

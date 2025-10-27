@@ -5,6 +5,7 @@ public class Detection : MonoBehaviour, IDetector
     IStealth character;
     [SerializeField] GameObject redMarker;
     [SerializeField] int health;
+    [SerializeField] Animator animator;
     bool detected
     {
         get
@@ -55,7 +56,7 @@ public class Detection : MonoBehaviour, IDetector
         return transform;
     }
 
-    public void GetHit(Animator animator)
+    public void GetHit()
     {
         Debug.Log("ENEMY HIT");
         if(health>0)

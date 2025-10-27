@@ -4,5 +4,5 @@ public interface IDetector
 {
     Transform GetTransform();
     void Backstab();
-    void GetHit(Animator animator);
+    void GetHit();
 }
