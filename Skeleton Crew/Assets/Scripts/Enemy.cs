@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         direction = (target.transform.position - transform.position).normalized;
-        rb.AddForce(direction*speed*Time.deltaTime);
+        rb.MovePosition(transform.position+=direction*speed*Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)

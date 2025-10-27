@@ -15,23 +15,25 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        moving = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if(moving)
+        if(moving)//Check if player is moving using their own movement
         {
             ApplyMovement(direction * speed * Time.deltaTime);
-        }*/
+        }
     }
 
     // Movement when the player uses input
     public void MovePlayer(InputAction.CallbackContext context)
     {
-        //moving = true;
         Vector2 dir = context.ReadValue<Vector2>();
-        direction = new Vector3(dir.x, dir.y, 0).normalized*speed;
+        if(dir.magnitude > 0) { moving = true; }
+        else { moving = false; }
+        direction = new Vector3(dir.x, dir.y, 0).normalized * speed;
         //Debug.Log($"MOVING: {direction}");
         if(Math.Abs(direction.x) > 0)
         {
@@ -44,14 +46,13 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<SpriteRenderer>().flipX = false;
             }
         }
-        rb.AddForce(direction);
+        //rb.AddForce(direction);
     }
 
     //Apply player Movement
     public void ApplyMovement(Vector3 dir)
     {
-        rb.AddForce(dir);
-        //direction = Vector3.zero;
+        rb.MovePosition(transform.position += dir);
     }
 
     public void PlayerAttack(InputAction.CallbackContext context)
@@ -59,8 +60,8 @@ public class PlayerMovement : MonoBehaviour
         if(context.performed)
         {
             var bullet = Instantiate(playerAttack, transform.position, Quaternion.identity);
-            Vector3 dirVector = (Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position).normalized;
-            bullet.GetComponent<PlayerAttack>().direction = dirVector;
+            Vector2 dirVector = (Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position);
+            bullet.GetComponent<PlayerAttack>().direction = dirVector.normalized;
         }
     }
 }
