@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
     void OnTriggerEnter(Collider collider)
     {
         var detector = collider.GetComponent<IDetector>();
-        detector?.GetHit(animator);
+        detector?.GetHit();
     }
 
     internal void Disable()

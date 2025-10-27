@@ -7,7 +7,9 @@ public class Stealth : MonoBehaviour, IStealth
     [SerializeField] Weapon weapon;
     [SerializeField] bool crouching, canBackstab;
     [SerializeField] CharacterController controller;
+    [SerializeField] Transform backstabPos;
     IDetector enemy;
+    [SerializeField] GameObject greenMarker;
 
     public bool IsHidden()
     {
@@ -19,7 +21,7 @@ public class Stealth : MonoBehaviour, IStealth
         if(enemy != null)
         {
             var dot = Vector3.Dot(enemy.GetTransform().forward, transform.position - enemy.GetTransform().position);
-            if (dot < -1)
+            if (dot < -1 && IsHidden())
             {
                 canBackstab = true;
             }
@@ -27,6 +29,7 @@ public class Stealth : MonoBehaviour, IStealth
             {
                 canBackstab = false;
             }
+            greenMarker.SetActive(canBackstab);
         }
     }
 
@@ -38,15 +41,22 @@ public class Stealth : MonoBehaviour, IStealth
 
     public void OnAction()
     {
-        if (canBackstab)
+        if (canBackstab && IsHidden())
         {
             controller.enabled = false;
-            var backstabPos = enemy;
+            transform.position = backstabPos.position;
+            transform.forward = backstabPos.forward;
+            animator.SetTrigger("Backstabbing");
+            //var backstabPos = enemy;
         }
         else
         {
             animator.SetTrigger("Attacking");
         }
+    }
+    public void BackstabFinish()
+    {
+        controller.enabled = true;
     }
 
     public void StartAttack()
@@ -70,7 +80,7 @@ public class Stealth : MonoBehaviour, IStealth
         return transform;
     }
 
-    public void backstabEvent()
+    public void Backstab()
     {
         enemy.Backstab();
     }

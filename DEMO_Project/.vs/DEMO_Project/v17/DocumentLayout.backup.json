@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\exercises\\hw2\\lock on system\\lockoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw2\\lock on system\\lockoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\exercises\\hw2\\stealth\\stealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw2\\stealth\\stealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\assets\\exercises\\hw2\\top down\\faceplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw2\\top down\\faceplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\exercises\\hw2\\stealth\\detection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw2\\stealth\\detection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\shared\\starterassets\\thirdpersoncontroller\\scripts\\thirdpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\shared\\starterassets\\thirdpersoncontroller\\scripts\\thirdpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\exercises\\hw2\\stealth\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw2\\stealth\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\exercises\\hw2\\stealth\\idetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw2\\stealth\\idetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LockOnController.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Lock on System\\LockOnController.cs",
-              "RelativeDocumentMoniker": "Assets\\Exercises\\HW2\\Lock on System\\LockOnController.cs",
-              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Lock on System\\LockOnController.cs",
-              "RelativeToolTip": "Assets\\Exercises\\HW2\\Lock on System\\LockOnController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ThirdPersonController.cs",
+              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Shared\\StarterAssets\\ThirdPersonController\\Scripts\\ThirdPersonController.cs",
+              "RelativeDocumentMoniker": "Assets\\Shared\\StarterAssets\\ThirdPersonController\\Scripts\\ThirdPersonController.cs",
+              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Shared\\StarterAssets\\ThirdPersonController\\Scripts\\ThirdPersonController.cs",
+              "RelativeToolTip": "Assets\\Shared\\StarterAssets\\ThirdPersonController\\Scripts\\ThirdPersonController.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAcwA8BAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T18:13:55.586Z",
+              "WhenOpened": "2025-10-26T19:37:45.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IDetector.cs",
+              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Stealth\\IDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Exercises\\HW2\\Stealth\\IDetector.cs",
+              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Stealth\\IDetector.cs",
+              "RelativeToolTip": "Assets\\Exercises\\HW2\\Stealth\\IDetector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T18:55:14.666Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FacePlayer.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Top Down\\FacePlayer.cs",
-              "RelativeDocumentMoniker": "Assets\\Exercises\\HW2\\Top Down\\FacePlayer.cs",
-              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Top Down\\FacePlayer.cs",
-              "RelativeToolTip": "Assets\\Exercises\\HW2\\Top Down\\FacePlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Detection.cs",
+              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Stealth\\Detection.cs",
+              "RelativeDocumentMoniker": "Assets\\Exercises\\HW2\\Stealth\\Detection.cs",
+              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Stealth\\Detection.cs",
+              "RelativeToolTip": "Assets\\Exercises\\HW2\\Stealth\\Detection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T17:21:44.653Z"
+              "WhenOpened": "2025-10-26T18:53:04.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Stealth\\Weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Exercises\\HW2\\Stealth\\Weapon.cs",
+              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Stealth\\Weapon.cs",
+              "RelativeToolTip": "Assets\\Exercises\\HW2\\Stealth\\Weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T18:52:39.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stealth.cs",
+              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Stealth\\Stealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Exercises\\HW2\\Stealth\\Stealth.cs",
+              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW2\\Stealth\\Stealth.cs",
+              "RelativeToolTip": "Assets\\Exercises\\HW2\\Stealth\\Stealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T18:08:50.231Z",
+              "EditorCaption": ""
             }
           ]
         }

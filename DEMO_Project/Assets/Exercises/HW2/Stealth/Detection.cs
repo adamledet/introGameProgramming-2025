@@ -1,10 +1,15 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Detection : MonoBehaviour, IDetector
 {
     IStealth character;
     [SerializeField] GameObject redMarker;
+    [SerializeField] GameObject greenMarker;
     [SerializeField] int health;
+    int maxHp;
+    [SerializeField] Image healthbar;
+    [SerializeField] Animator animator;
     bool detected
     {
         get
@@ -15,6 +20,11 @@ public class Detection : MonoBehaviour, IDetector
         {
             redMarker.SetActive(value);
         }
+    }
+
+    void Start()
+    {
+        maxHp = health;
     }
 
     void Update()
@@ -32,10 +42,10 @@ public class Detection : MonoBehaviour, IDetector
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("TRIGGER ENTER");
         var stealthy = other.GetComponent<IStealth>();
         if (stealthy != null)
         {
+            Debug.Log("TRIGGER ENTER");
             character = stealthy;
             character.Notify(this);
             if (!stealthy.IsHidden())
@@ -55,7 +65,7 @@ public class Detection : MonoBehaviour, IDetector
         return transform;
     }
 
-    public void GetHit(Animator animator)
+    public void GetHit()
     {
         Debug.Log("ENEMY HIT");
         if(health>0)
@@ -63,14 +73,15 @@ public class Detection : MonoBehaviour, IDetector
             health -= 1;
             if (health == 0)
             {
-                animator.SetTrigger("EnemyDead");
+                animator.SetBool("EnemyDead", true);
             }
-            else { animator.SetTrigger("EnemyHit"); }
+            animator.SetTrigger("EnemyHit");
         }
+        healthbar.fillAmount = (float)health / (float)maxHp;
     }
 
     public void Backstab()
     {
-        return;
+        animator.SetTrigger("Backstabbed");
     }
 }
