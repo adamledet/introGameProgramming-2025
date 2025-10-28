@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IStealth
 {
-    bool IsHidden();
+    bool IsCrouched();
     void Notify(IDetector enemy);
     Transform getTransform();
 }

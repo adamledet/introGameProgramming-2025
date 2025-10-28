@@ -10,17 +10,7 @@ public class Detection : MonoBehaviour, IDetector
     int maxHp;
     [SerializeField] Image healthbar;
     [SerializeField] Animator animator;
-    bool detected
-    {
-        get
-        {
-            return this;
-        }
-        set
-        {
-            redMarker.SetActive(value);
-        }
-    }
+    bool detected;//The 'set' caused stackoverflow. Was unable to fix, so used standard bool
 
     void Start()
     {
@@ -31,8 +21,15 @@ public class Detection : MonoBehaviour, IDetector
     {
         if(character != null && !detected)
         {
-            detected = (IsInFOV() || !character.IsHidden());
+            detected = (IsInFOV() || !character.IsCrouched());
+            //Debug.Log($"In FOV: {IsInFOV()}, !IsCrouched: {!character.IsCrouched()}, detected: {detected}");
         }
+        redMarker.SetActive(detected);//I don't like setting this at every update, but it works.
+    }
+
+    public bool IsUnaware()
+    {
+        return !detected;
     }
 
     bool IsInFOV()
@@ -45,19 +42,21 @@ public class Detection : MonoBehaviour, IDetector
         var stealthy = other.GetComponent<IStealth>();
         if (stealthy != null)
         {
-            Debug.Log("TRIGGER ENTER");
+            //Debug.Log("TRIGGER ENTER");
             character = stealthy;
             character.Notify(this);
-            if (!stealthy.IsHidden())
-            {
-                detected = true;
-            }
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
-        character = null;
-        detected = false;
+        var stealthy = other.GetComponent<IStealth>();
+        if (stealthy != null)
+        {
+            detected = false;
+            character.Notify(null);
+            character = null;
+        }
     }
 
     public Transform GetTransform()
@@ -67,7 +66,7 @@ public class Detection : MonoBehaviour, IDetector
 
     public void GetHit()
     {
-        Debug.Log("ENEMY HIT");
+        //Debug.Log("ENEMY HIT");
         if(health>0)
         {
             health -= 1;

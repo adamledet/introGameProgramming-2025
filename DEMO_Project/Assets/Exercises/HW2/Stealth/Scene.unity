@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Detection
   redMarker: {fileID: 1047292412}
-  greenMarker: {fileID: 0}
+  greenMarker: {fileID: 988685955}
   health: 3
   healthbar: {fileID: 1805827766}
   animator: {fileID: 153815492}
@@ -1418,6 +1418,7 @@ MonoBehaviour:
   controller: {fileID: 1540610248}
   backstabPos: {fileID: 814399554}
   greenMarker: {fileID: 988685955}
+  hidden: 0
 --- !u!143 &1540610248 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: 1925873226565265912, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}

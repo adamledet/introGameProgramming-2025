@@ -11,7 +11,7 @@ public class Stealth : MonoBehaviour, IStealth
     IDetector enemy;
     [SerializeField] GameObject greenMarker;
 
-    public bool IsHidden()
+    public bool IsCrouched()
     {
         return crouching;
     }
@@ -21,7 +21,7 @@ public class Stealth : MonoBehaviour, IStealth
         if(enemy != null)
         {
             var dot = Vector3.Dot(enemy.GetTransform().forward, transform.position - enemy.GetTransform().position);
-            if (dot < -1 && IsHidden())
+            if (dot < -1 && enemy.IsUnaware())
             {
                 canBackstab = true;
             }
@@ -41,7 +41,7 @@ public class Stealth : MonoBehaviour, IStealth
 
     public void OnAction()
     {
-        if (canBackstab && IsHidden())
+        if (canBackstab)
         {
             controller.enabled = false;
             transform.position = backstabPos.position;
