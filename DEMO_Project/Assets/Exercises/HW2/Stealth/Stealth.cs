@@ -16,6 +16,7 @@ public class Stealth : MonoBehaviour, IStealth
 
     void Update()
     {
+        Debug.Log(Quaternion.Euler(30, 20, 0));
         if(enemy != null)
         {
             var dot = Vector3.Dot(enemy.GetTransform().forward, transform.position - enemy.GetTransform().position);

@@ -20,9 +20,20 @@ public class Detection : MonoBehaviour, IDetector
 
     void Update()
     {
-        if(character != null && !detected)
+        if(character != null)
         {
-            detected = (IsInFOV() || !character.IsHidden());
+            if (!character.IsHidden()) detected = true;
+            if(IsInFOV())
+            {
+                var direction = character.getTransform().position - transform.position;
+                Debug.DrawRay(new Vector3(transform.position.x, 1, transform.position.z), direction, Color.red);
+                var ray = new Ray(transform.position, direction);
+                if (Physics.Raycast(ray, out RaycastHit hit/*,2*/))
+                {
+                    var stealth = hit.transform.GetComponent<IStealth>();
+                    if (stealth != null) { detected = true; }
+                }
+            }
         }
     }
 
@@ -33,7 +44,7 @@ public class Detection : MonoBehaviour, IDetector
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("TRIGGER ENTER");
+        //Debug.Log("TRIGGER ENTER");
         var stealthy = other.GetComponent<IStealth>();
         if (stealthy != null)
         {
