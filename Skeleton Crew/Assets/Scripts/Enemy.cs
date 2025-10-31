@@ -21,11 +21,13 @@ public class Enemy : MonoBehaviour
         rb.MovePosition(transform.position+=direction*speed*Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Collision");
         var bullet = other.GetComponent<PlayerAttack>();
         if(bullet != null)
         {
+            Debug.Log("HIT");
             bullet.health -= 1;
             TakeDamage(bullet.damage);
         }

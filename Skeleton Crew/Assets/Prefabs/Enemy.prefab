@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   target: {fileID: 8674709871286520260, guid: 37ec228d3e9fe7341b33dcbb80833072, type: 3}
-  speed: 2
+  speed: 10
   health: 10
 --- !u!58 &811929862728096965
 CircleCollider2D:

@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject playerAttack;
     Rigidbody2D rb;
     bool moving;
+    [SerializeField] Renderer background;
+    [SerializeField] float bgSlowdown;//hard-set value used to 'slow down' the rate at which the background shifts.
 
     private void Start()
     {
@@ -53,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
     public void ApplyMovement(Vector3 dir)
     {
         rb.MovePosition(transform.position += dir);
+        if (bgSlowdown != 0) { background.material.mainTextureOffset += (new Vector2(dir.x, dir.y)) / bgSlowdown; }
     }
 
     public void PlayerAttack(InputAction.CallbackContext context)

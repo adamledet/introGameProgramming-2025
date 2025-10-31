@@ -15,7 +15,7 @@ public class PlayerAttack : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody2D>();
         rb.AddForce(direction * speed);
-        Debug.Log(direction);
+        //Debug.Log(direction);
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(rb.linearVelocity.magnitude);
+        //Debug.Log(rb.linearVelocity.magnitude);
         rb.linearVelocity *= 0.9f;
         health -= Time.deltaTime;
         if(rb.linearVelocity.magnitude<1)
@@ -35,6 +35,16 @@ public class PlayerAttack : MonoBehaviour
                 DestroySelf();
             }
         }
+        /*transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime;
+        speed *= 0.9f;
+        if (speed < 1)
+        {
+            health -= Time.deltaTime;
+            if (health < 0)
+            {
+                DestroySelf();
+            }
+        }*/
     }
 
     // Currently used to destroy bullet. Should later be used to turn off and reset position of bullet.

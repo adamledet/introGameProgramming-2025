@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4699543807989171444}
   - component: {fileID: 5209111641307451170}
   - component: {fileID: -2931594067677854848}
-  - component: {fileID: 2746464176173566744}
+  - component: {fileID: -6762084397460045451}
   m_Layer: 0
   m_Name: PlayerAttack
   m_TagString: Untagged
@@ -139,13 +139,13 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!50 &2746464176173566744
+--- !u!50 &-6762084397460045451
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
