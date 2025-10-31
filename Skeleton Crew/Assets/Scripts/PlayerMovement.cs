@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     Vector3 direction;
-    [SerializeField] float speed;
+    private float speed;
     [SerializeField] GameObject playerAttack;
     Rigidbody2D rb;
     bool moving;
@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         moving = false;
+        speed = this.GetComponent<PlayerStats>().speed;
     }
 
     // Update is called once per frame
@@ -66,5 +67,10 @@ public class PlayerMovement : MonoBehaviour
             Vector2 dirVector = (Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position);
             bullet.GetComponent<PlayerAttack>().direction = dirVector.normalized;
         }
+    }
+
+    public void UpdateSpeed(float newSpd)
+    {
+        speed = newSpd;
     }
 }
