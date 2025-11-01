@@ -108,6 +108,9 @@ MonoBehaviour:
   target: {fileID: 8674709871286520260, guid: 37ec228d3e9fe7341b33dcbb80833072, type: 3}
   speed: 10
   health: 10
+  damage: 10
+  xpValue: 20
+  enemyManagerScript: {fileID: 0}
 --- !u!58 &811929862728096965
 CircleCollider2D:
   m_ObjectHideFlags: 0

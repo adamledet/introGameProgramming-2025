@@ -13,12 +13,14 @@ public class PlayerMovement : MonoBehaviour
     bool moving;
     [SerializeField] Renderer background;
     [SerializeField] float bgSlowdown;//hard-set value used to 'slow down' the rate at which the background shifts.
+    private SpriteRenderer myImage;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         moving = false;
         speed = this.GetComponent<PlayerStats>().speed;
+        myImage = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -38,15 +40,15 @@ public class PlayerMovement : MonoBehaviour
         else { moving = false; }
         direction = new Vector3(dir.x, dir.y, 0).normalized * speed;
         //Debug.Log($"MOVING: {direction}");
-        if(Math.Abs(direction.x) > 0)
+        if(Math.Abs(direction.x) > 0 && Time.timeScale>0)
         {
             if (direction.x < 0)
             {
-                GetComponent<SpriteRenderer>().flipX = true;
+                myImage.flipX = true;
             }
             else
             {
-                GetComponent<SpriteRenderer>().flipX = false;
+                myImage.flipX = false;
             }
         }
         //rb.AddForce(direction);

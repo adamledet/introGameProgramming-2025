@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnEnemies : MonoBehaviour
 {
     [SerializeField] GameObject player;
+    private PlayerStats playerStats;
     [SerializeField] GameObject enemyPrefab;
     List<GameObject> enemies = new List<GameObject>();
     [SerializeField] int maxEnemies;
@@ -18,15 +19,19 @@ public class SpawnEnemies : MonoBehaviour
         worldHeight = Camera.main.orthographicSize * 2;
         worldWidth = worldHeight * aspect;
 
+        playerStats = player.GetComponent<PlayerStats>();
+
         while (enemies.Count < maxEnemies)
         {
             var newEnemy = Instantiate(enemyPrefab);
-            newEnemy.GetComponent<Enemy>().target = player;
+            var enemyScript = newEnemy.GetComponent<Enemy>();
+            enemyScript.target = player;
             enemies.Add(newEnemy);
             /*newEnemy.transform.position = new Vector3(Random.Range(player.transform.position.x-worldWidth/2, player.transform.position.x + worldWidth/2),
                                                       Random.Range(player.transform.position.y - worldHeight/2, player.transform.position.y + worldHeight/2), 0);*/
 
-            newEnemy.transform.position = GetSpawnPosition(worldWidth,worldHeight,player.transform.position);
+            newEnemy.transform.position = GetSpawnPosition(worldWidth, worldHeight, player.transform.position);
+            enemyScript.enemyManagerScript = this;
         }
     }
 
@@ -48,5 +53,10 @@ public class SpawnEnemies : MonoBehaviour
         else { xPos = playerPos.y - xPos; }
 
         return new Vector3(xPos, yPos, 0);
+    }
+
+    public void RespawnEnemy(GameObject enemy, Enemy enemyScript)
+    {
+        enemy.transform.position = GetSpawnPosition(worldWidth, worldHeight, player.transform.position);
     }
 }

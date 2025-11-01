@@ -15,6 +15,10 @@ public class PlayerStats : MonoBehaviour
     PlayerMovement myMovement;
     [SerializeField] Image healthBar;
     [SerializeField] Image xpBar;
+    [SerializeField] float iFrames;//User set invincibility frames on-hit
+    private float iTime;//Remaining invincibility time
+    [SerializeField] GameObject gameOverScreen;
+    [SerializeField] SpriteRenderer myImage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,8 +35,19 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        GainXP(10 * Time.deltaTime);//Test gaining 10xp/second
-        TakeDamage(5 * Time.deltaTime);//Test taking 5 dmg/second
+        //GainXP(10 * Time.deltaTime);//Test gaining 10xp/second
+        //TakeDamage(5 * Time.deltaTime);//Test taking 5 dmg/second
+        if (iTime > 0)
+        {
+            myImage.color = Color.red;
+            iTime -= Time.deltaTime;
+        }
+        else
+        {
+            myImage.color = Color.white;
+            iTime = 0;
+        }
+        Debug.Log(iTime);
     }
 
     public void GainXP(float xp)
@@ -59,8 +74,16 @@ public class PlayerStats : MonoBehaviour
 
     public void TakeDamage(float dmg)
     {
-        health -= dmg;
-        healthBar.fillAmount = (health / maxHp);
-        //If health less than 0, make gameover
+        if(iTime <=0)
+        {
+            health -= dmg;
+            healthBar.fillAmount = (health / maxHp);
+            iTime = iFrames;
+            if(health <=0)
+            {
+                gameOverScreen.SetActive(true);
+                Time.timeScale = 0;
+            }
+        }
     }
 }
