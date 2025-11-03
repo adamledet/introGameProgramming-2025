@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "PlayerDropper",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "21ffdeab-bded-4014-8723-aadb65d4c96c",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "6d455d29-d995-4b38-8840-deb0f78d4f31",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5af4485d-4275-4eb4-8043-fc38a05431b0",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
