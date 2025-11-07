@@ -1,5 +1,4 @@
 {
-    "version": 1,
     "name": "StarterAssets",
     "maps": [
         {
@@ -37,24 +36,6 @@
                     "name": "Sprint",
                     "type": "PassThrough",
                     "id": "980e881e-182c-404c-8cbf-3d09fdb48fef",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Crouch",
-                    "type": "Button",
-                    "id": "bbb74a82-51d1-47bd-8832-6c653fa6c56c",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Action",
-                    "type": "Button",
-                    "id": "f3aa9b4d-47a7-4035-9571-4ae41cc4ed19",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -235,28 +216,6 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9d17434c-ddb0-498a-bc50-49d55b7ef33d",
-                    "path": "<Keyboard>/c",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a8ec258e-f30d-4ec0-901a-c771429759b3",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
