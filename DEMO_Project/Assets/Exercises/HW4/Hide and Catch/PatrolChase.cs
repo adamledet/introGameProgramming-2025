@@ -12,6 +12,7 @@ public class PatrolChase : MonoBehaviour
     [SerializeField] float attackCooldown;
     float attackTimer;
 
+    /*
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -67,4 +68,5 @@ public class PatrolChase : MonoBehaviour
     {
         return Vector3.Distance(transform.position, player.position) <= range;
     }
+    */
 }
