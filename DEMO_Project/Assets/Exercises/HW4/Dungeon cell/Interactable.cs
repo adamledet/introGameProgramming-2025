@@ -20,7 +20,7 @@ namespace Dungeon
             }
         }
 
-        internal void Interact()
+        internal virtual void Interact(PickupKey player)
         {
             
         }

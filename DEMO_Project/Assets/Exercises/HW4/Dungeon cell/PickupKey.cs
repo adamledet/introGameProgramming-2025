@@ -32,7 +32,10 @@ namespace Dungeon
 
         public void OnInteract()
         {
-            
+            if(activeInteractable)
+            {
+                activeInteractable.Interact(this);
+            }
         }
         
         public void OpenDoor()

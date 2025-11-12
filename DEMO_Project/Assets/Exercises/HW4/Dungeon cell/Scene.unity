@@ -246,6 +246,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 165136, guid: 4ea2c25a7dabbf04c9e40bc05a5c78da, type: 3}
       insertIndex: -1
       addedObject: {fileID: 627713953}
+    - targetCorrespondingSourceObject: {fileID: 165136, guid: 4ea2c25a7dabbf04c9e40bc05a5c78da, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 627713958}
   m_SourcePrefab: {fileID: 100100000, guid: 4ea2c25a7dabbf04c9e40bc05a5c78da, type: 3}
 --- !u!1 &117487214 stripped
 GameObject:
@@ -783,6 +786,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1.5
   m_Center: {x: 0, y: 0.4096797, z: 0}
+--- !u!114 &627713958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117487214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5bb0086a27db641ae57270b8407aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dungeon.Item
 --- !u!4 &696010142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
@@ -1538,8 +1553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd14b1ceec29a5542ba0095381d9cc4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickupKey
-  range: 0
-  textPanel: {fileID: 0}
+  range: 5
+  textPanel: {fileID: 328260892}
 --- !u!1001 &1562196218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1611,6 +1626,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 195692, guid: dd2500919f1e4c64a9dc9604233608a2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1562196221}
+    - targetCorrespondingSourceObject: {fileID: 195692, guid: dd2500919f1e4c64a9dc9604233608a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1562196222}
+    - targetCorrespondingSourceObject: {fileID: 195692, guid: dd2500919f1e4c64a9dc9604233608a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1562196226}
   m_SourcePrefab: {fileID: 100100000, guid: dd2500919f1e4c64a9dc9604233608a2, type: 3}
 --- !u!4 &1562196219 stripped
 Transform:
@@ -1643,6 +1664,43 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1.5
   m_Center: {x: -0.6490165, y: 1.0848988, z: 0}
+--- !u!95 &1562196222
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562196220}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1562196226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562196220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d6c965fb1cfc54fbab8674848a82d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dungeon.Door
+  unlocked: 0
+  text: {fileID: 328260892}
+  animator: {fileID: 196090493}
 --- !u!1001 &1593655317
 PrefabInstance:
   m_ObjectHideFlags: 0

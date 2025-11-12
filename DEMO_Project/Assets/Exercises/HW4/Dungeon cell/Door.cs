@@ -13,11 +13,7 @@ namespace Dungeon
         {
             if (unlocked)
             {
-                if(!open)
-                {
-                    open = true;
-                    animator.SetTrigger("Open");
-                }
+                OpenDoor();
             }
             else
             {
@@ -25,5 +21,28 @@ namespace Dungeon
                 text.GetComponent<TMPro.TextMeshProUGUI>().text = "Door is locked!";
             }
         }
+
+        private void OpenDoor()
+        {
+            animator.SetBool("OpenOutward", true);
+        }
+
+        private void CloseDoor()
+        {
+            animator.SetBool("OpenOutward", false);
+        }
+
+        protected void OnTriggerExit(Collider other)
+        {
+            if(open)
+            {
+                CloseDoor();
+            }
+        }
+        
+        /*internal override void Interact (Player player)
+        {
+            
+        }*/
     }
 }

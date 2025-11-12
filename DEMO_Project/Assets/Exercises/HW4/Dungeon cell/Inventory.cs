@@ -11,5 +11,10 @@ namespace Dungeon
         {
             items.Add(activeItem);
         }
+
+        public bool Contains(Item item)
+        {
+            return items.Contains(item);
+        }
     }
 }

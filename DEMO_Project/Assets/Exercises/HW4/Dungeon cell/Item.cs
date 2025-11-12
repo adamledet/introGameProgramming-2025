@@ -2,11 +2,18 @@ using UnityEngine;
 
 namespace Dungeon
 {
-    public class Item: MonoBehaviour
+    public class Item: Interactable
     {
-        private void OnTriggerEnter(Collider other)
+        [SerializeField] GameObject visual;
+        internal override void Interact(PickupKey player)
         {
-            
+            if(enabled)
+            {
+                //var inventory = player.GetInventory(player);
+                //inventory.Add(this);
+                Destroy(visual);
+            }
         }
+
     }
 }
