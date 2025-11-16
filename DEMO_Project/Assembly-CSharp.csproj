@@ -85,9 +85,11 @@
     <Compile Include="Assets\Exercises\HW2\Turret\Turret.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\Pickup.cs" />
     <Compile Include="Assets\Shared\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
+    <Compile Include="Assets\Exercises\HW4\Hide and Catch\PatrolPointDisable.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Shared\Scripts\InputManager.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\Player.cs" />
+    <Compile Include="Assets\Exercises\HW4\Hide and Catch\EnemySeesPlayer.cs" />
     <Compile Include="Assets\Exercises\HW2\Stealth\Stealth.cs" />
     <Compile Include="Assets\Exercises\HW2\Lock on System\LockOnController.cs" />
     <Compile Include="Assets\Exercises\Object Spawner\Scripts\Spawner.cs" />
@@ -97,6 +99,7 @@
     <Compile Include="Assets\Exercises\Quest Markers\QuestReq.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\HealthPickup.cs" />
     <Compile Include="Assets\Exercises\HW3\OpenDoor\DoorToggle.cs" />
+    <Compile Include="Assets\Exercises\HW4\Hide and Catch\Patrol.cs" />
     <Compile Include="Assets\Exercises\HW2\Top Down\FacePlayer.cs" />
     <Compile Include="Assets\Exercises\HW2\Stealth\Detection.cs" />
     <Compile Include="Assets\Exercises\HW2\Pressure Plate\PressurePlate.cs" />
