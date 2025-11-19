@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 811929862728096965}
   - component: {fileID: -4348047210977241744}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Elite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1730834143556151639, guid: a00a5cad60a362c41afadb94e42b7454, type: 3}
+  m_Sprite: {fileID: 5493271731887828930, guid: 175b6b453d7f8334c9c72c39966ff906, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,10 +106,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   target: {fileID: 8674709871286520260, guid: 37ec228d3e9fe7341b33dcbb80833072, type: 3}
-  speed: 10
-  health: 10
+  speed: 5
+  health: 20
   damage: 10
-  xpValue: 20
+  xpValue: 50
   enemyManagerScript: {fileID: 0}
 --- !u!58 &811929862728096965
 CircleCollider2D:
