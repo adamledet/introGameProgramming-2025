@@ -7,10 +7,16 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] float maxHp;
     float health;
     [SerializeField] public float speed;
-    [SerializeField] float damage;
+    float dashSpeed;
+    [SerializeField] public float dashMaxDuration;
+    [SerializeField] public float damage;
     [SerializeField] float exp;
     float xpToLevelUp;
     int level;
+    [SerializeField] public float attackCD;
+    [SerializeField] public float dashCD;
+
+
     [SerializeField] TextMeshProUGUI levelDisplay;
     PlayerMovement myMovement;
     [SerializeField] Image healthBar;
@@ -29,6 +35,7 @@ public class PlayerStats : MonoBehaviour
         health = maxHp;
         healthBar.fillAmount = (health / maxHp);
         xpBar.fillAmount = exp / xpToLevelUp;
+        dashSpeed = speed * 2;
 
         myMovement = this.GetComponent<PlayerMovement>();
     }
@@ -47,7 +54,7 @@ public class PlayerStats : MonoBehaviour
             myImage.color = Color.white;
             iTime = 0;
         }
-        Debug.Log(iTime);
+        //Debug.Log(iTime);
     }
 
     public void GainXP(float xp)
