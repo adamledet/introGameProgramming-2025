@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -32,6 +33,11 @@ public class SpawnEnemies : MonoBehaviour
     private string secondZero;
     private float minutesLeft;
     private string minuteZero;
+    [SerializeField] TextMeshProUGUI enemyPowerUI;
+
+    [SerializeField] Queue<Tuple<GameObject,float>> enemiesToRespawn;
+    private float timeToRespawn;
+    private bool readyToRespawn;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,6 +53,8 @@ public class SpawnEnemies : MonoBehaviour
         secondZero = "";
 
         RepopulateEnemies();
+
+        enemiesToRespawn = new Queue<Tuple<GameObject, float>>();
     }
 
     // Update is called once per frame
@@ -59,14 +67,29 @@ public class SpawnEnemies : MonoBehaviour
         if (minutesLeft < 10) { minuteZero = "0"; } else { minuteZero = ""; }
         enemyTimer.text = ($"{minuteZero}{minutesLeft}:{minuteZero}{secondsLeft}");
         if (enemyTimerLeft <= 0) { IncreaseEnemyPower(); }
+
+        if (timeToRespawn <= 0 && enemiesToRespawn.Count > 0)
+        {
+            if(readyToRespawn)
+            {
+                RespawnEnemy(enemiesToRespawn.Dequeue().Item1);
+                readyToRespawn = false;
+            }
+            else
+            {
+                timeToRespawn = enemiesToRespawn.Peek().Item2;
+                readyToRespawn = true;
+            }
+        }
+        else { timeToRespawn -= Time.deltaTime; }
     }
 
     private Vector3 GetSpawnPosition(float wW, float wH, Vector3 playerPos)
     {
-        bool left = Random.value < 0.5f;
-        bool up = Random.value < 0.5f;
-        float xPos = wW / 2 + Random.Range(0, wW / 2);
-        float yPos = wH / 2 + Random.Range(0, wH / 2);
+        bool left = UnityEngine.Random.value < 0.5f;
+        bool up = UnityEngine.Random.value < 0.5f;
+        float xPos = wW / 2 + UnityEngine.Random.Range(0, wW / 2);
+        float yPos = wH / 2 + UnityEngine.Random.Range(0, wH / 2);
         if (up) { yPos = playerPos.y + yPos; }
         else { yPos = playerPos.y - yPos; }
 
@@ -79,6 +102,7 @@ public class SpawnEnemies : MonoBehaviour
     public void IncreaseEnemyPower()
     {
         enemyPowerLevel += 1;
+        enemyPowerUI.text = enemyPowerLevel.ToString();
         enemyTimerMax *= 1.1f;
         enemyTimerLeft = enemyTimerMax;
         maxEnemies += (maxEnemies / 3);
@@ -86,9 +110,15 @@ public class SpawnEnemies : MonoBehaviour
         RepopulateEnemies();
     }
 
-    public void RespawnEnemy(GameObject enemy, Enemy enemyScript)
+    public void RespawnEnemy(GameObject enemy)
     {
         enemy.transform.position = GetSpawnPosition(worldWidth, worldHeight, player.transform.position);
+        enemy.SetActive(true);
+    }
+
+    public void AddToRespawn(GameObject enemy, float cdTime)
+    {
+        enemiesToRespawn.Enqueue(Tuple.Create(enemy, cdTime));
     }
 
     private void RepopulateEnemies()

@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     private float maxHP;
     [SerializeField] float damage;
     [SerializeField] float xpValue;
+    [SerializeField] float cdTime;
     Rigidbody2D rb;
     private PlayerStats playerStats;
     private PlayerStats player;
@@ -61,6 +62,7 @@ public class Enemy : MonoBehaviour
     {
         target.GetComponent<PlayerStats>().GainXP(xpValue);
         health = maxHP;
-        enemyManagerScript.RespawnEnemy(this.gameObject, this);
+        gameObject.SetActive(false);
+        enemyManagerScript.AddToRespawn(this.gameObject, cdTime);
     }
 }

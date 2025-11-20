@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.42, y: 1.37, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 5493271731887828930, guid: 175b6b453d7f8334c9c72c39966ff906, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.7704402, b: 0.7704402, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -108,8 +108,9 @@ MonoBehaviour:
   target: {fileID: 8674709871286520260, guid: 37ec228d3e9fe7341b33dcbb80833072, type: 3}
   speed: 5
   health: 20
-  damage: 10
+  damage: 20
   xpValue: 50
+  cdTime: 10
   enemyManagerScript: {fileID: 0}
 --- !u!58 &811929862728096965
 CircleCollider2D:
