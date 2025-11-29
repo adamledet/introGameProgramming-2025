@@ -15,6 +15,8 @@ public class PlayerStats : MonoBehaviour
     int level;
     [SerializeField] public float attackCD;
     [SerializeField] public float dashCD;
+    [SerializeField] public int bulletHealth;
+    private float timeValue;
 
 
     [SerializeField] TextMeshProUGUI levelDisplay;
@@ -26,6 +28,12 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] GameObject gameOverScreen;
     [SerializeField] SpriteRenderer myImage;
 
+    [SerializeField] GameObject LevelUpScreen;
+    [SerializeField] TextMeshProUGUI LevelUpScreenText;
+    [SerializeField] GameObject LevelUpChoice_1;
+    [SerializeField] GameObject LevelUpChoice_2;
+    [SerializeField] GameObject LevelUpChoice_3;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,7 +44,9 @@ public class PlayerStats : MonoBehaviour
         healthBar.fillAmount = (health / maxHp);
         xpBar.fillAmount = exp / xpToLevelUp;
         dashSpeed = speed * 2;
+        if (bulletHealth <= 0) { bulletHealth = 1; }
 
+        LevelUpScreen.SetActive(false);
         myMovement = this.GetComponent<PlayerMovement>();
     }
 
@@ -68,15 +78,18 @@ public class PlayerStats : MonoBehaviour
     {
         exp = 0;
         xpToLevelUp *= 1.1f;
-        maxHp += maxHp / 10;
-        speed += speed / 10;
-        myMovement.UpdateSpeed(speed);
-        damage += damage / 10;
-        health = maxHp;//Full Heal on levelup
+        //maxHp += maxHp / 10;
+        //speed += speed / 10;
+        //myMovement.UpdateSpeed(speed);
+        //damage += damage / 10;
+        //health = maxHp;//Full Heal on levelup
         level += 1;
         levelDisplay.text = level.ToString();
         xpBar.fillAmount = exp / xpToLevelUp;
-        healthBar.fillAmount = (health / maxHp);
+        timeValue = Time.timeScale;
+        Time.timeScale = 0;
+        LevelUpScreen.SetActive(true);
+        LevelUpScreenText.text = $"{level-1} --> {level}\r\nLEVEL UP!\r\nChoose your bonus:";
     }
 
     public void TakeDamage(float dmg)
@@ -92,5 +105,32 @@ public class PlayerStats : MonoBehaviour
                 Time.timeScale = 0;
             }
         }
+    }
+
+    private void CloseLevelUp()
+    {
+        LevelUpScreen.SetActive(false);
+        Time.timeScale = timeValue;
+    }
+
+    public void LevelUp_FullHeal()
+    {
+        maxHp += maxHp / 10;
+        health = maxHp;
+        healthBar.fillAmount = (health / maxHp);
+        CloseLevelUp();
+    }
+    public void LevelUp_ProjectilePierce()
+    {
+        damage += damage / 10;
+        bulletHealth += 1;
+        CloseLevelUp();
+    }
+    public void LevelUp_Swift()
+    {
+        speed += speed / 10;
+        attackCD = (attackCD * 0.9f);
+        myMovement.UpdateSpeed(speed, attackCD);
+        CloseLevelUp();
     }
 }

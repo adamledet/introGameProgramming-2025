@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     public float speed;
     [SerializeField] public float health;
     [SerializeField] public float damage;
+    [SerializeField] float lingerTime;
     Rigidbody2D rb;
 
 
@@ -16,6 +17,7 @@ public class PlayerAttack : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         rb.AddForce(direction * speed);
         //Debug.Log(direction);
+        if (lingerTime < 0.05f) { lingerTime = 0.05f; }
     }
 
     // Update is called once per frame
@@ -27,24 +29,11 @@ public class PlayerAttack : MonoBehaviour
     {
         //Debug.Log(rb.linearVelocity.magnitude);
         rb.linearVelocity *= 0.9f;
-        health -= Time.deltaTime;
-        if(rb.linearVelocity.magnitude<1)
+        lingerTime -= Time.deltaTime;
+        if((rb.linearVelocity.magnitude<1 && lingerTime <=0) || health<=0)
         {
-            if (health < 0)
-            {
-                DestroySelf();
-            }
+            DestroySelf();
         }
-        /*transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime;
-        speed *= 0.9f;
-        if (speed < 1)
-        {
-            health -= Time.deltaTime;
-            if (health < 0)
-            {
-                DestroySelf();
-            }
-        }*/
     }
 
     // Currently used to destroy bullet. Should later be used to turn off and reset position of bullet.

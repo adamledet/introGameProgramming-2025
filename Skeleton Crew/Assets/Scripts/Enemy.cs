@@ -33,13 +33,13 @@ public class Enemy : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         var bullet = other.GetComponent<PlayerAttack>();
+        var p = other.GetComponent<PlayerStats>();
         if (bullet != null)
         {
             bullet.health -= 1;
             TakeDamage(bullet.damage);
         }
-
-        playerStats = other.GetComponent<PlayerStats>();
+        else if (p != null) { playerStats = other.GetComponent<PlayerStats>(); }
     }
 
     public void OnTriggerExit2D(Collider2D other)

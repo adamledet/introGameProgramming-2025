@@ -105,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
             Vector2 dirVector = (mousePos - myPos);
             bullet.GetComponent<PlayerAttack>().direction = dirVector.normalized;
             bullet.GetComponent<PlayerAttack>().damage = myStats.damage;
+            bullet.GetComponent<PlayerAttack>().health = myStats.bulletHealth;
             attackCDLeft = attackCD;
         }
     }
@@ -122,9 +123,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void UpdateSpeed(float newSpd)
+    public void UpdateSpeed(float newSpd, float newAttackCD)
     {
         speed = newSpd;
+        attackCD = newAttackCD;
         dashSpeed = speed * 2;
     }
 }
