@@ -3055,7 +3055,7 @@ MonoBehaviour:
   elitePrefab: {fileID: 5857502908000687366, guid: 6aa08b5ecda4f254d9c7ba2ff3ab8b4d, type: 3}
   maxElites: 0
   enemyTimer: {fileID: 2012325178}
-  enemyTimerMax: 5
+  enemyTimerMax: 10
   enemyPowerUI: {fileID: 1859872960}
 --- !u!4 &1812853027
 Transform:
@@ -3652,6 +3652,10 @@ PrefabInstance:
       propertyPath: xpBar
       value: 
       objectReference: {fileID: 1233328476}
+    - target: {fileID: 98416466145832619, guid: 37ec228d3e9fe7341b33dcbb80833072, type: 3}
+      propertyPath: iFrames
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 98416466145832619, guid: 37ec228d3e9fe7341b33dcbb80833072, type: 3}
       propertyPath: healthBar
       value: 

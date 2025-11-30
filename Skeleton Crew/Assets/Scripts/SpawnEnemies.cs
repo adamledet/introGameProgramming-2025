@@ -13,12 +13,12 @@ public class SpawnEnemies : MonoBehaviour
     //Enemy Parameters
     [SerializeField] GameObject enemyPrefab;
     List<GameObject> enemies = new List<GameObject>();
-    [SerializeField] int maxEnemies;
+    [SerializeField] float maxEnemies;
 
     //Elite Parameters
     [SerializeField] GameObject elitePrefab;
     List<GameObject> elites = new List<GameObject>();
-    [SerializeField] int maxElites;
+    [SerializeField] float maxElites;
 
     //World Coords
     float worldWidth;
@@ -65,7 +65,7 @@ public class SpawnEnemies : MonoBehaviour
         if(secondsLeft < 10) { secondZero = "0"; } else { secondZero = ""; }
         minutesLeft = Mathf.Floor(enemyTimerLeft / 60);
         if (minutesLeft < 10) { minuteZero = "0"; } else { minuteZero = ""; }
-        enemyTimer.text = ($"{minuteZero}{minutesLeft}:{minuteZero}{secondsLeft}");
+        enemyTimer.text = ($"{minuteZero}{minutesLeft}:{secondZero}{secondsLeft}");
         if (enemyTimerLeft <= 0) { IncreaseEnemyPower(); }
 
         if (timeToRespawn <= 0 && enemiesToRespawn.Count > 0)
@@ -103,10 +103,10 @@ public class SpawnEnemies : MonoBehaviour
     {
         enemyPowerLevel += 1;
         enemyPowerUI.text = enemyPowerLevel.ToString();
-        enemyTimerMax *= 1.1f;
+        enemyTimerMax *= 1.2f;
         enemyTimerLeft = enemyTimerMax;
-        maxEnemies += (maxEnemies / 3);
-        maxElites += 1;
+        maxEnemies += (int)(Math.Max(1,(maxEnemies / 5)));
+        maxElites = (int)(maxEnemies/5);
         RepopulateEnemies();
     }
 
@@ -123,7 +123,7 @@ public class SpawnEnemies : MonoBehaviour
 
     private void RepopulateEnemies()
     {
-        while (enemies.Count < maxEnemies)
+        while (enemies.Count < Math.Floor(maxEnemies))
         {
             var newEnemy = Instantiate(enemyPrefab);
             var enemyScript = newEnemy.GetComponent<Enemy>();
@@ -136,7 +136,7 @@ public class SpawnEnemies : MonoBehaviour
             enemyScript.enemyManagerScript = this;
         }
 
-        while (elites.Count < maxElites)
+        while (elites.Count < Math.Floor(maxElites))
         {
             var newElite = Instantiate(elitePrefab);
             var eliteScript = newElite.GetComponent<Enemy>();

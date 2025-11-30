@@ -110,7 +110,7 @@ MonoBehaviour:
   health: 20
   damage: 20
   xpValue: 50
-  cdTime: 10
+  cdTime: 5
   enemyManagerScript: {fileID: 0}
 --- !u!58 &811929862728096965
 CircleCollider2D:
