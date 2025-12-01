@@ -1587,7 +1587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &853684153
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3055,7 +3055,7 @@ MonoBehaviour:
   elitePrefab: {fileID: 5857502908000687366, guid: 6aa08b5ecda4f254d9c7ba2ff3ab8b4d, type: 3}
   maxElites: 0
   enemyTimer: {fileID: 2012325178}
-  enemyTimerMax: 10
+  enemyTimerMax: 5
   enemyPowerUI: {fileID: 1859872960}
 --- !u!4 &1812853027
 Transform:
