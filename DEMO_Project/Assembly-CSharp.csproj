@@ -97,12 +97,14 @@
     <Compile Include="Assets\Exercises\HW2\Stealth\IDetector.cs" />
     <Compile Include="Assets\Shared\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\Exercises\Quest Markers\QuestReq.cs" />
+    <Compile Include="Assets\Exercises\HW3\Push and Pull\BoxMover.cs" />
     <Compile Include="Assets\Exercises\Coin Pickup\HealthPickup.cs" />
     <Compile Include="Assets\Exercises\HW3\OpenDoor\DoorToggle.cs" />
     <Compile Include="Assets\Exercises\HW4\Hide and Catch\Patrol.cs" />
     <Compile Include="Assets\Exercises\HW2\Top Down\FacePlayer.cs" />
     <Compile Include="Assets\Exercises\HW2\Stealth\Detection.cs" />
     <Compile Include="Assets\Exercises\HW2\Pressure Plate\PressurePlate.cs" />
+    <Compile Include="Assets\Exercises\HW3\Push and Pull\BoxMovement.cs" />
     <Compile Include="Assets\DialogBox\DialogueManager.cs" />
     <Compile Include="Assets\Exercises\Inventory\EquipmentManager.cs" />
     <Compile Include="Assets\Exercises\HW2\Turret\Bullet.cs" />

@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\assets\\exercises\\hw4\\hide and catch\\enemyseesplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw4\\hide and catch\\enemyseesplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\assets\\exercises\\hw4\\hide and catch\\patrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw4\\hide and catch\\patrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\exercises\\hw4\\hide and catch\\patrolpointdisable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw4\\hide and catch\\patrolpointdisable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\assets\\exercises\\hw4\\hide and catch\\patrolchasemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\exercises\\hw4\\hide and catch\\patrolchasemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|c:\\users\\adamc\\documents\\introgameprogramming-2025\\demo_project\\assets\\exercises\\hw3\\push and pull\\boxmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFAB3051-5843-165B-7BBE-CBD2F1838982}|Assembly-CSharp.csproj|solutionrelative:assets\\exercises\\hw3\\push and pull\\boxmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PatrolChaseMachine.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW4\\Hide and Catch\\PatrolChaseMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Exercises\\HW4\\Hide and Catch\\PatrolChaseMachine.cs",
-              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW4\\Hide and Catch\\PatrolChaseMachine.cs",
-              "RelativeToolTip": "Assets\\Exercises\\HW4\\Hide and Catch\\PatrolChaseMachine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T22:02:12.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PatrolPointDisable.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW4\\Hide and Catch\\PatrolPointDisable.cs",
-              "RelativeDocumentMoniker": "Assets\\Exercises\\HW4\\Hide and Catch\\PatrolPointDisable.cs",
-              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW4\\Hide and Catch\\PatrolPointDisable.cs",
-              "RelativeToolTip": "Assets\\Exercises\\HW4\\Hide and Catch\\PatrolPointDisable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T15:54:58.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Patrol.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW4\\Hide and Catch\\Patrol.cs",
-              "RelativeDocumentMoniker": "Assets\\Exercises\\HW4\\Hide and Catch\\Patrol.cs",
-              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW4\\Hide and Catch\\Patrol.cs",
-              "RelativeToolTip": "Assets\\Exercises\\HW4\\Hide and Catch\\Patrol.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T15:45:59.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EnemySeesPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW4\\Hide and Catch\\EnemySeesPlayer.cs",
-              "RelativeDocumentMoniker": "Assets\\Exercises\\HW4\\Hide and Catch\\EnemySeesPlayer.cs",
-              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW4\\Hide and Catch\\EnemySeesPlayer.cs",
-              "RelativeToolTip": "Assets\\Exercises\\HW4\\Hide and Catch\\EnemySeesPlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Title": "BoxMovement.cs",
+              "DocumentMoniker": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW3\\Push and Pull\\BoxMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Exercises\\HW3\\Push and Pull\\BoxMovement.cs",
+              "ToolTip": "C:\\Users\\adamc\\Documents\\introGameProgramming-2025\\DEMO_Project\\Assets\\Exercises\\HW3\\Push and Pull\\BoxMovement.cs",
+              "RelativeToolTip": "Assets\\Exercises\\HW3\\Push and Pull\\BoxMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T15:09:15.764Z",
+              "WhenOpened": "2025-12-08T01:54:51.069Z",
               "EditorCaption": ""
             }
           ]

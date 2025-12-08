@@ -14,6 +14,8 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
+        public bool attachedToBox;
+
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
@@ -262,7 +264,7 @@ namespace StarterAssets
 
 
                 // rotate to face input direction relative to camera position
-                transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+                if (!attachedToBox) { transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f); }
             }
 
 

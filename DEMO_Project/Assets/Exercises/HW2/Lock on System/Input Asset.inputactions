@@ -43,18 +43,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Action",
+                    "name": "Interact",
                     "type": "Button",
-                    "id": "346f7d07-fb89-4706-9e3c-e49576c507af",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Crouch",
-                    "type": "Button",
-                    "id": "f2464606-1990-4a7f-9605-113ebcf1fe25",
+                    "id": "ae22d944-a051-4f97-ad4e-b7ab4655543e",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -240,23 +231,12 @@
                 },
                 {
                     "name": "",
-                    "id": "560c8273-029e-463d-9f55-5e96c0a40b3a",
-                    "path": "<Mouse>/leftButton",
+                    "id": "28806e22-3cfe-4656-a66c-6069f9a994c8",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardMouse",
-                    "action": "Action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e5b3b87a-45aa-4bba-98ee-5d0c2d9182b8",
-                    "path": "<Keyboard>/c",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";KeyboardMouse",
-                    "action": "Crouch",
+                    "groups": "",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
